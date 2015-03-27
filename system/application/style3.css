@@ -1,0 +1,740 @@
+
+
+/* 
+	Button 1.5.0 - A tumblr theme by simurai.com
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+
+html {
+	background-image: url(ttp://www.sadmuffin.net/cherrybam/myspacelayouts/vintage/253.gif);	
+}
+
+body {
+	font:62.5%/1 "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+}
+
+a { text-decoration: none; }
+a:hover, .search-submit:hover { opacity: 0.6; }
+a:focus, a:active { outline: none; }
+a:active, .search-submit:active {
+	opacity: 0.3;
+	outline: none;
+	position: relative;
+	top: 1px;
+}
+#avatar #avatar-click:hover { opacity: 1; }
+#avatar #avatar-click:active { background-color: rgba(255,255,255,0); }
+#buttons a:hover { opacity: 1; }
+#buttons a:active { position: static; opacity: 0.8; }
+
+/* @group Global */
+
+.button48 {
+	display: inline-block;	
+	border-radius: 24px;	
+	
+	-webkit-box-shadow: inset 0 -1px 0 #000, 0px 1px 3px rgba(0,0,0,0.8);
+	   -moz-box-shadow: inset 0 -1px 0 #000, 0px 1px 3px rgba(0,0,0,0.8);
+			box-shadow: inset 0 -1px 0 #000, 0px 1px 3px rgba(0,0,0,0.8);
+}
+
+.button48:hover {
+	opacity: 1;
+	-webkit-transform: scale(1.05);	
+	   -moz-transform: scale(1.05);
+			transform: scale(1.05);
+
+	-webkit-box-shadow: inset 0 -1px 0 #000, 0px 3px 4px rgba(0,0,0,0.8);
+	   -moz-box-shadow: inset 0 -1px 0 #000, 0px 3px 4px rgba(0,0,0,0.8);
+			box-shadow: inset 0 -1px 0 #000, 0px 3px 4px rgba(0,0,0,0.8);
+}
+.button48:hover img {  
+	opacity: 0.8;
+}
+.with-avatar h2, .with-avatar h3 {
+	text-indent: 1.2em;
+}
+
+
+/* @end */
+
+/* @group Header */
+
+#header {
+	text-align: center;
+	margin: 50px 30px 30px 335px;
+}
+
+#header #title {
+	font-family: "Lobster";
+	font-size: 8em;
+	font-weight: bold;
+	display: inline-block;
+	text-shadow: #fff 0 -3px 0px, rgba(0,0,0,0.4) 0 2px 3px;
+}  
+#header #title:hover {			
+	opacity: 1;
+}
+
+
+/* @end */
+
+/* @group Nav */
+
+
+#nav {
+	font-size: 1.3em;
+	margin: 30px 0;
+}
+#nav a, .search-submit {
+	margin: 5px;
+}
+#nav a, .search-submit {
+	color: #fff;
+	padding: 4px 10px 5px;
+	display: inline-block;
+	border: 1px dashed rgba(255,255,255,0.25);
+	background-color: #000;
+	background-color: rgba(0,0,0,0.8);
+	border-radius: 4px;	
+}
+#nav form {
+	display: inline-block;
+	margin-left: 20px;
+}
+.search-field {
+	width: 100px;
+	padding: 5px 6px;
+	margin-right: 5px;
+	color: #919191;
+	font-size: 0.9em;
+	text-shadow: #000 0 1px 0;
+	background-color: #000;
+	background-color: rgba(0,0,0,0.8);
+	border: none;
+	border-top: 1px dashed rgba(255,255,255,0.1);
+	border-radius: 8px;
+	
+	-webkit-box-shadow: inset 0 3px 3px rgba(0,0,0,0.6), 0 1px 3px rgba(255,255,255,0.1);
+	   -moz-box-shadow: inset 0 3px 3px rgba(0,0,0,0.6), 0 1px 3px rgba(255,255,255,0.1);
+			box-shadow: inset 0 3px 3px rgba(0,0,0,0.6), 0 1px 3px rgba(255,255,255,0.1);
+}
+.search-field:focus {
+	outline: 0 none;
+	color: #fff;
+	background-color: rgba(0,0,0,0.6);
+}
+.search-submit:hover {
+	cursor: pointer;
+}
+.search_query {
+	font-weight: bold;
+}
+
+/* @end */
+
+/* @group Avatar */
+
+#avatar-click { 
+	width: 122px;
+	height: 122px;
+	position: absolute;
+	left: 152px;
+	top: 29px;
+	z-index: 11;
+	border-radius: 64px;
+}
+#avatar-button { 
+	width: 128px;
+	height: 128px;
+	position: absolute;
+	left: 149px;
+	top: 29px;
+	z-index: 10;
+	background-repeat: no-repeat;
+	background-image: url(http://static.tumblr.com/2xhkg2s/iHxl5kgz2/button128.png);
+	border-radius: 64px;
+	
+	-webkit-box-shadow: inset 0 -1px 0px rgba(0,0,0,0.8), 0px 1px 5px rgba(0,0,0,0.8);
+	   -moz-box-shadow: inset 0 -1px 0px rgba(0,0,0,0.8), 0px 1px 5px rgba(0,0,0,0.8);
+			box-shadow: inset 0 -1px 0px rgba(0,0,0,0.8), 0px 1px 5px rgba(0,0,0,0.8);
+}
+#avatar-img { 
+	width: 126px;
+	height: 126px;
+	position: absolute;
+	left: 150px;
+	top: 30px;
+	z-index: 9;
+	background-repeat: no-repeat;
+	border-radius: 64px;
+	
+	-webkit-transform: rotate(0deg);
+	   -moz-transform: rotate(0deg);
+			transform: rotate(0deg);
+
+	-webkit-transition: -webkit-transform 1s ease-in-out;
+	   -moz-transition: -webkit-transform 1s ease-in-out;
+			transition: -webkit-transform 1s ease-in-out;
+}
+#avatar:hover #avatar-img {
+	-webkit-transform: rotate(360deg);
+	   -moz-transform: rotate(360deg);
+			transform: rotate(360deg);
+
+	-webkit-transition: -webkit-transform 1s ease-in-out;
+	   -moz-transition: -webkit-transform 1s ease-in-out;
+			transition: -webkit-transform 1s ease-in-out;
+}
+#avatar-img::selection { background-color: transparent; }
+#avatar-ghost-header {
+	position: absolute;
+	left: 110px;
+	top: 0px;
+	z-index: -1;
+	opacity: 0.1;
+	border-radius: 64px;
+	
+	-webkit-transform: rotate(30deg) scale(2) ;
+	   -moz-transform: rotate(30deg) scale(2) ;
+			transform: rotate(30deg) scale(2) ;
+}
+#avatar-ghost {
+	position: absolute;
+	right: 100px;
+	bottom: 100px;
+	z-index: -1;
+	opacity: 0.05;
+	border-radius: 64px;
+	
+	-webkit-transform: rotate(-15deg) scale(3) scaleX(-1);	
+	   -moz-transform: rotate(-15deg) scale(3) scaleX(-1);	
+			transform: rotate(-15deg) scale(3) scaleX(-1);	
+}
+
+
+
+/* @end */
+
+#wrapper {
+	width: 910px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+/* @group Side */
+
+#side {
+	width: 270px;
+	float: left;
+	font-size: 1.1em;
+	line-height: 1.3em;
+}
+#side h2 {
+	margin-bottom: 20px;
+	font-family: "Lobster";
+	font-size: 1.8em;
+	color: #fff;
+	text-align: center;
+	text-shadow: #000 0 2px 5px;
+}
+#side a {
+	color: #fff;
+}
+.side-box {
+	padding: 15px;
+	color: #fff;
+	color: rgba(255,255,255,0.6);
+	text-shadow: #000 0 1px 0;
+	background-color: #000;
+	background-color: rgba(0,0,0,0.8);
+	border-top: 1px dashed rgba(255,255,255,0.1);
+	border-radius: 8px;	
+}
+#twitter {
+	margin-top: 30px;
+	border-top: 1px dashed rgba(255,255,255,0.1);
+	background-color: #000;
+	background-color: rgba(0,0,0,0.8);
+	border-radius: 8px;	
+}
+#twitter .twtr-hd img {
+	border-radius: 4px;
+}
+#twitter .twtr-timeline {
+	margin: 0 10px;
+	text-shadow: #fff 0 1px 0;
+}
+#twitter .twtr-tweets {
+	background-image: url(http://static.tumblr.com/2xhkg2s/uytl5kgp2/bg_post.png);
+	border: 1px dashed rgba(0,0,0,0.3);
+	border-radius: 4px;
+}
+#twitter .twtr-tweet {
+	margin: 10px;
+	background-color: #fff;
+	background-color: rgba(254,255,255,0.5);
+	border: 1px dashed rgba(255,255,255,0.5);
+	border-radius: 4px;
+	
+	-webkit-box-shadow: 0 0 3px rgba(0,0,0,0.1);
+	   -moz-box-shadow: 0 0 3px rgba(0,0,0,0.1);
+			box-shadow: 0 0 3px rgba(0,0,0,0.1);
+}
+#following {
+	margin-top: 30px;
+	text-align: center;
+}
+
+/* @end */
+
+/* @group Post */
+
+
+#post-wrapper {
+	width: 602px;
+	float: right;
+	z-index: 1;
+	position: relative;
+	padding-bottom: 50px;
+}
+.post {
+	padding: 50px;
+	text-shadow: rgba(255,255,255,0.6) 0 1px 0;
+	background-image: url(http://static.tumblr.com/2xhkg2s/uytl5kgp2/bg_post.png);
+	border-left: 1px dashed rgba(0,0,0,0.3);
+	border-right: 1px dashed rgba(0,0,0,0.3);
+	border-top: 1px dashed rgba(255,255,255,0.6);
+	
+	-webkit-box-shadow: inset 0px -1px 3px rgba(0,0,0,0.1), inset 0px 1px 3px rgba(255,255,255,0.4);
+	   -moz-box-shadow: inset 0px -1px 3px rgba(0,0,0,0.1), inset 0px 1px 3px rgba(255,255,255,0.4);
+			box-shadow: inset 0px -1px 3px rgba(0,0,0,0.1), inset 0px 1px 3px rgba(255,255,255,0.4);
+}
+.post:first-child {
+	border-top: 1px dashed rgba(0,0,0,0.3);
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+.border {
+	height: 8px;
+	background-image: url(http://static.tumblr.com/2xhkg2s/kZBl5kgkv/bg_border.png);
+	border-bottom: 1px dashed rgba(0,0,0,0.4);
+	border-top: 1px dashed rgba(255,255,255,0.5);
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	
+	-webkit-box-shadow: inset 0 2px 2px rgba(0,0,0,0.2), 0 2px 3px rgba(0,0,0,0.4);
+	   -moz-box-shadow: inset 0 2px 2px rgba(0,0,0,0.2), 0 2px 3px rgba(0,0,0,0.4);
+			box-shadow: inset 0 2px 2px rgba(0,0,0,0.2), 0 2px 3px rgba(0,0,0,0.4);
+}
+.avatar48 {
+	position: absolute;
+	margin-left: -25px;
+	margin-top: -25px;
+	z-index: 1;
+}
+.sub {
+	margin-top: 20px;
+	max-width: 500px;
+}
+
+.clear {
+	clear: both;
+}
+
+.main-box {
+	width: 440px;
+	padding: 30px;
+	background-color: #fff;
+	background-color: rgba(254,255,255,0.5);
+	border: 2px dashed rgba(255,255,255,0.5);
+	border-radius: 4px;
+	
+	-webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.1), 0 0 3px rgba(0,0,0,0.1);
+	   -moz-box-shadow: inset 0 0 3px rgba(0,0,0,0.1), 0 0 3px rgba(0,0,0,0.1);
+			box-shadow: inset 0 0 3px rgba(0,0,0,0.1), 0 0 3px rgba(0,0,0,0.1);
+}
+.sub-box {
+	padding: 10px;
+	margin-bottom: 20px;
+	background-color: #fff;
+	background-color: rgba(254,255,255,0.5);
+	border: 1px dashed rgba(255,255,255,0.5);
+	border-radius: 4px;
+	
+	-webkit-box-shadow: 0 0 2px rgba(0,0,0,0.1);
+	   -moz-box-shadow: 0 0 2px rgba(0,0,0,0.1);
+			box-shadow: 0 0 2px rgba(0,0,0,0.1);
+}
+.main h2, .sub h2 {
+	font-family: "Lobster";
+	font-size: 3em;
+	line-height: 1.3em;
+}
+.sub h2 {
+	margin-bottom: 12px;
+}
+.main h3 {
+	font-family: "Lobster";
+	font-size: 2em;
+	line-height: 1.1em;
+	margin-bottom: 15px;
+}
+
+/* @end */
+
+/* @group Post Types */
+
+.text img {
+	max-width: 440px;
+	border-radius: 4px;
+	
+	-webkit-box-shadow: 0px 1px 2px rgba(0,0,0,0.2);
+	   -moz-box-shadow: 0px 1px 2px rgba(0,0,0,0.2);
+			box-shadow: 0px 1px 2px rgba(0,0,0,0.2);
+}
+
+.photo img {
+	border-radius: 4px;
+	
+	-webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.3);
+	   -moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.3);
+			box-shadow: 0px 1px 3px rgba(0,0,0,0.3);
+}
+.photo a:hover { opacity: 1; }
+.photo a:hover img { 
+	-webkit-transform: scale(1.005);
+	   -moz-transform: scale(1.005);
+			transform: scale(1.005);
+
+	-webkit-box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+	   -moz-box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+			box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+}
+.link h2 {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.link a:hover h2 {
+	opacity: 0.5;
+}
+.quote h2:before, .quote h2:after {
+	content: '\201C';
+	color: white;
+	opacity: 0.7;
+	padding: 0 5px;
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font-weight: bold;
+}
+.quote h2:before { content: '\201C'; }
+.quote h2:after { content: '\201D'; }
+.chat {
+	font-size: 1.3em;
+	line-height: 1.4em;
+}
+.chat li {
+	border-bottom: 1px dashed rgba(254,255,255,0.6);
+	padding: 5px 0 5px 20px;
+}
+.chat li:first-child {
+	padding-top: 0;
+}
+.chat li:last-child {
+	padding-bottom: 0;
+	border: none;
+}
+.chat .label {
+	color: rgba(0,0,0,0.33);
+	font-weight: bold;
+}
+.chat .even {
+	padding-right: 20px;
+	text-align: right;
+}
+.audio .player {
+	float: left;
+	width: 207px;
+	padding: 20px;
+	margin-right: 20px;
+	background-color: rgba(254,255,255,0.5);
+	border: 1px dashed rgba(255,255,255,0.5);
+	border-radius: 4px;
+	
+	-webkit-box-shadow: 0 0 5px rgba(0,0,0,0.1);
+	   -moz-box-shadow: 0 0 5px rgba(0,0,0,0.1);
+			box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+.audio .player img { width: 207px; }
+.audio .info { float: left; }
+.audio .info .artist { 
+	font-size: 1.3em;
+	font-weight: bold;
+	line-height: 1.5em;
+}
+.audio .info .playcount {
+	font-weight: bold;
+	font-size: 1.5em;
+}
+.media object, .media embed {
+	background-color: transparent;
+	border-radius: 4px;
+	
+	-webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.3);
+	   -moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.3);
+			box-shadow: 0px 1px 3px rgba(0,0,0,0.3);
+}
+.answer .main-box {
+	font-size: 1.5em;
+	text-indent: 0;
+	font-weight: bold;
+	line-height: 1.3em;
+}
+.answer .asker {
+	font-size: 0.9em;
+	display: block;
+	margin-top: 10px;
+}
+
+
+
+/* @end */
+
+/* @group Copy */
+
+.copy {
+	line-height: 1.4em;
+	font-size: 1.3em;
+}
+.copy p {
+	margin-bottom: 10px;
+}
+.copy blockquote {
+	margin-bottom: 10px;
+	margin-left: 8px;
+	padding-left: 8px;
+	border-left: 2px dashed rgba(255,255,255,0.5);
+}
+.copy iframe {
+	margin-top: 10px;
+}
+.copy strong {
+	font-weight: bold;
+	font-size: 1.1em;
+}
+.copy em {
+	font-style: italic;
+}
+.copy ul, .copy ol {
+	margin-bottom: 15px;
+}
+.copy ul li {
+	list-style-type: square;
+	margin-bottom: 8px;
+	margin-left: 16px;
+	list-style-position: inside;
+}
+.copy ol li {
+	list-style-type: decimal;
+	margin-bottom: 8px;
+	margin-left: 16px;
+	list-style-position: inside;
+}
+.copy p:last-child, .copy ul:last-child, .copy ol:last-child, .copy blockquote:last-child {
+	margin-bottom: 0px;
+}
+
+
+/* @end */
+
+/* @group Meta */
+
+.meta {
+	color: #fff;
+	text-shadow: rgba(0,0,0,0.5) 0 1px 0;
+}
+.meta a {
+	color: #fff;
+}
+.meta li {
+	max-width: 480px;
+	font-size: 1.1em;
+	padding: 7px 12px;
+	display: inline-block;
+	margin-right: 2px;
+	margin-bottom: 1px;
+	background-color: #000;	
+	background-color: rgba(0,0,0,0.25);
+	border: 1px dashed rgba(255,255,255,0.5);
+	border-top: 1px dashed rgba(0,0,0,0.2);
+	border-radius: 4px;
+	
+	-webkit-background-clip: padding-box;
+	   -moz-background-clip: padding-box;
+			background-clip: padding-box;
+	
+	-webkit-box-shadow: 0px 1px 3px rgba(255,255,255,0.4), inset 0 2px 3px rgba(0,0,0,0.2);
+	   -moz-box-shadow: 0px 1px 3px rgba(255,255,255,0.4), inset 0 2px 3px rgba(0,0,0,0.2);
+			box-shadow: 0px 1px 3px rgba(255,255,255,0.4), inset 0 2px 3px rgba(0,0,0,0.2);	
+}
+.meta .tags a {
+	margin-right: 8px;
+	white-space: nowrap;
+	display: inline-block;
+}
+.meta .tags a:last-child {
+	margin-right: 0px;
+}
+.meta .heart {
+	font-size: 1.3em;
+	line-height: 0.1em;
+	margin-right: 2px;
+}
+
+/* @end */
+
+/* @group Disqus */
+
+#comments {
+	margin-top: 30px;
+	padding-top: 20px;
+}
+
+
+/* @end */
+
+/* @group Notes */
+
+ol.notes {
+    margin-top: 30px ;
+    font-size: 1.1em;
+    border-radius: 4px;
+}
+ol.notes li.note {
+    border-top: 1px dashed rgba(255,255,255,0.5);
+    padding: 8px 10px 8px 0;
+    background-color: rgba(254,255,255,0.5);
+    border-radius: 4px;
+}
+ol.notes li.note:first-child {border-top: none;}
+ol.notes li.note img.avatar {
+    vertical-align: -4px;
+    border-radius: 3px;
+	margin: 0 5px 0 8px;
+}
+ol.notes li.note span.action {font-weight: bold;}
+ol.notes li.note .answer_content {font-weight: normal;}
+ol.notes li.note blockquote {
+    padding: 4px 10px;
+    margin: 0 0 0 23px;
+    line-height: 1.3em;
+}
+ol.notes li.note blockquote a { text-decoration: none; }
+
+/* @end */
+
+
+/* @group pagination */
+
+#pagination {
+	font-size: 1.5em;
+	margin-top: 50px;
+	text-align: center;
+}
+#pagination a {
+	color: #fff;
+	margin-right: 5px;
+	margin-left: 5px;
+	padding: 3px 10px 4px;
+	border: 1px dashed rgba(255,255,255,0.25);
+	background-color: #000;
+	background-color: rgba(0,0,0,0.8);
+    border-radius: 4px;
+}
+#pagination .current_page {
+	color: #666;
+	color: rgba(255,255,255,0.3);
+	margin-right: 5px;
+	margin-left: 5px;
+	padding: 3px 10px 4px;
+	border: 1px dashed #000;
+	background-color: rgba(0,0,0,0.3);
+    border-radius: 4px;
+}
+
+/* @end */
+
+/* @group Credits */
+
+#credits {
+	text-align: right;
+	padding-right: 30px;
+}
+#credits p {
+	font-family: "Courier New", Courier, mono;
+	font-size: 1.1em;
+	padding: 10px;
+	color: rgba(255,255,255,0.5);
+	background-image: url(http://static.tumblr.com/2xhkg2s/DhQl5kgnc/bg_credits.png);
+	display: inline-block;
+	margin: 0 5px;
+	border: 1px dashed rgba(255,255,255,0.13);
+	border-top: none;
+	border-radius: 3px;
+		
+	-webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,0.8), 0 3px 3px rgba(0,0,0,0.5);
+	   -moz-box-shadow: inset 0 3px 5px rgba(0,0,0,0.8), 0 3px 3px rgba(0,0,0,0.5);
+			box-shadow: inset 0 3px 5px rgba(0,0,0,0.8), 0 3px 3px rgba(0,0,0,0.5);
+}
+#credits a { color: #fff; }
+
+/* @end */
+
+/* @group Buttons */
+
+
+#buttons {
+	margin-left: 160px;
+	margin-top: 50px;
+	height: 150px;
+}
+#button100, #button70, #button60 {
+	background-color: transparent;
+	position: absolute;
+	z-index: 3;
+	
+	-webkit-box-shadow: 0px 3px 5px rgba(0,0,0,0.8), inset 0 -1px 0 rgba(0,0,0,1);
+	   -moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.8), inset 0 -1px 0 rgba(0,0,0,1);
+			box-shadow: 0px 3px 5px rgba(0,0,0,0.8), inset 0 -1px 0 rgba(0,0,0,1);
+}
+#button100 {
+	margin-left: 170px;
+	margin-top: 60px;
+	border-radius: 50px;
+}
+#button70 {
+	margin-left: 70px;
+	margin-top: 0px;
+	border-radius: 35px;
+}
+#button60 {
+	margin-left: 0px;
+	margin-top: 50px;
+	border-radius: 30px;
+}
+#button100:hover, #button70:hover, #button60:hover {
+	-webkit-transform: scale(1.1);
+	   -moz-transform: scale(1.1);
+			transform: scale(1.1);
+	
+	-webkit-box-shadow: 0px 5px 10px rgba(0,0,0,0.8), inset 0 -1px 0 rgba(0,0,0,1);
+	   -moz-box-shadow: 0px 5px 10px rgba(0,0,0,0.8), inset 0 -1px 0 rgba(0,0,0,1);
+			box-shadow: 0px 5px 10px rgba(0,0,0,0.8), inset 0 -1px 0 rgba(0,0,0,1);
+}
+#button100:hover, #button70:hover, #button60:hover, #button100::selection, #button70::selection, #button60::selection {
+	background-color: transparent;
+}
+
+
+/* @end */
